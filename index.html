@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="./script.js"></script>
+    <title>Grid</title>
+  </head>
+  <body onload="buildCells()">
+    <header>
+      <div id="site_name">Grid</div>
+      <div class="field">
+        <label>Columns (<span id="columnCount">40</span>)</label>
+        <div><input id="columns" min="1" max="80" value="40" step="1" type="range" oninput="setNumberOfColumns()" onchange="setNumberOfColumns()"></div>
+      </div>
+      <div class="field">
+        <label>Rows (<span id="rowCount">20</span>)</label>
+        <div><input id="rows" min="1" max="80" value="20" step="1" type="range" oninput="setNumberOfRows()" onchange="setNumberOfRows()"></div>
+      </div>
+    </header>
+    <div id="content-wrapper">
+    </div>
+  </body>
+</html>
